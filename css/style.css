@@ -1,0 +1,87 @@
+/** {
+    border: 1px solid red !important;
+}*/
+
+body {
+    background-color: #232323;
+    margin: 0;
+    font-family: "Avenir" "Montserrat";
+}
+
+
+h1 {
+    color: white;
+    text-align: center;
+    background-color: steelblue;
+    margin: 0;
+    font-weight: normal;
+    text-transform: uppercase;
+    line-height: 1.1;
+    padding: 20px 0;
+    transition: background 0.6s;
+    /* for compatability */
+    -webkit-transition: transition: background 0.6s;
+    -moz-transition: transition: background 0.6s;
+}
+
+.square {
+    width: 30%;
+    padding-bottom: 30%;
+    float: left;
+    margin: 1.33%;
+    border-radius: 15%;
+    /* only when the background changes */
+    transition: background 0.6s;
+    /* for compatability */
+    -webkit-transition: transition: background 0.6s;
+    -moz-transition: transition: background 0.6s;
+}
+
+#container {
+    margin: 20px auto;
+    max-width: 600px;
+}
+
+
+button {
+    background: none;
+    border: none;
+    /* taking up the whole div */
+    height: 100%;
+    font-weight: 700%;
+    color: steelblue;
+    letter-spacing: 1px;
+    font-size: inherit;
+    /* what we want to transition (all properties), how long */
+    transition: all 0.3s;
+    -webkit-transition: transition: background 0.3s;
+    -moz-transition: transition: background 0.3s;
+    /* gets rid of the outline that the browser adds, when selected */
+    outline: none;
+}
+
+button:hover {
+    color: white;
+    background: steelblue;
+}
+
+#message {
+    display: inline-block;
+    width: 20%;
+    font-family: inherit;
+}
+
+#stripe {
+    background-color: white;
+    height: 30px;
+    text-align: center;
+}
+
+.selected {
+    background-color: steelblue;
+    color: white;
+}
+
+#colorDisplay {
+    font-size: 200%;
+}
